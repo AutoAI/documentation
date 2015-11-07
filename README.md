@@ -3,4 +3,4 @@ DriveAI is based in open source and aims to provide clear, concise, and useful d
 
 ##Hardware
 
-Our first vehicle, the 'Cockroach', is a modified ![ScooterX Baja 49cc Off-Road Go Kart] (http://www.scooterx.biz/en/gas-go-karts/20-49cc-scooterx-baja-off-road-go-kart.html)
+Our first vehicle, the 'Cockroach', is a modified [ScooterX Baja 49cc Off-Road Go Kart] (http://www.scooterx.biz/en/gas-go-karts/20-49cc-scooterx-baja-off-road-go-kart.html)
