@@ -3,4 +3,7 @@ DriveAI is based in open source and aims to provide clear, concise, and useful d
 
 ##Current Progress
 ###Vehicles
-Our first vehicle, the (Cockroach) [null]
+Our first vehicle, the (Cockroach) [Cockroach unified repo location], is complete in its current state. We have developed it to the full extent of its capabilities and are now ready to move on to our second vehicle.
+
+Preliminary work has begun to procure our second vehicle, tentatively named the (Birdie) [https://github.com/DriveAI/birdie-planning].
+
