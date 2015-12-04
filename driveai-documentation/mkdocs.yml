@@ -1,0 +1,6 @@
+site_name: DriveAI Technical Docs
+pages:
+- Introduction: index.md
+- Birdie: birdie.md
+- Cockroach: cockroach.md
+theme: readthedocs
