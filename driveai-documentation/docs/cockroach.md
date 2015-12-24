@@ -1,10 +1,10 @@
-# baja-actuator
-This is an arduino project that interfaces with the rest of the DriveAI-Platform and actuates the vehicle according to the commands passed to it via serial. 
+## Actuation
+Actuation of the Cockroach is controlled by an arduino project that interfaces with the rest of the DriveAI-Platform and operates according to the commands passed to it via serial. 
 
-##Synchronization
-The control section operates asynchronously from the rest of the computer, and has a variable refresh rate. By default, the controller updates at 100Hz. Serial can be sent to the controller at any time, and is collected and applied during the next cycle. At the default refresh rate, this results in around 10-12ms of latency in a worst-case scenario. This is suitably fast for driving at low speeds, and can be made much faster as needed.
+###Synchronization
+The control section operates asynchronously from the rest of the computer, and has a variable refresh rate. By default, the controller updates at 100Hz. Serial can be sent to the controller at any time, and is collected and applied during the next cycle. At the default refresh rate, this results in at most approximately 10-12ms of latency. This is acceptably fast for driving at low speeds, and can be made much faster as needed.
 
-##Encoding and Transmission
+###Encoding and Transmission
 Each time the controller is sent a command, it is in the form of one byte of data. We have written an encoder for said data that provides a balance between raw speed and movement precision. Each packet looks like this:
 
 ![control diagram](cockroach-assets/control_diagram.png)
