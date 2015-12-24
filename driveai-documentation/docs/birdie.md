@@ -1,1 +1,4 @@
 #The Birdie
+The Birdie is our second vehicle. It will be built starting in the Spring of 2016 by members of the DriveAI team.
+#Introduction
+After completing the Cockroach, we decided that our next vehicle should be larger and more robust to accomodate for our growing capabilities. Therefore, a street legal golf cart capable of speeds of 25mph with a range of at least 30 miles will be our next purchase.
