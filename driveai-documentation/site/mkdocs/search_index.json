@@ -27,8 +27,23 @@
         }, 
         {
             "location": "/cockroach/", 
-            "text": "", 
+            "text": "baja-actuator\n\n\nThis is an arduino project that interfaces with the rest of the DriveAI-Platform and actuates the vehicle according to the commands passed to it via serial. \n\n\nSynchronization\n\n\nThe control section operates asynchronously from the rest of the computer, and has a variable refresh rate. By default, the controller updates at 100Hz. Serial can be sent to the controller at any time, and is collected and applied during the next cycle. At the default refresh rate, this results in around 10-12ms of latency in a worst-case scenario. This is suitably fast for driving at low speeds, and can be made much faster as needed.\n\n\nEncoding and Transmission\n\n\nEach time the controller is sent a command, it is in the form of one byte of data. We have written an encoder for said data that provides a balance between raw speed and movement precision. Each packet looks like this:\n\n\n\n\nThe first two bits of data indicate which control element is being set. This configuration allows for up to 4 individual controls, which we have assigned as follows:\n  - 0b\n00\n - Stop the engine immediately.\n  - 0b\n01\n - Control steering.\n  - 0b\n10\n - Control acceleration.\n  - 0b\n11\n - Control braking.\n\n\nThe last 6 bits of data represent the position value being written to that control. This translates to an unsigned integer from 0-63. We believe that 64 positions per control is adequate for our current vehicle. It is our intention in the future to increase the precision of these controls for use in larger vehicles. Therefore, the currently established ranges for the controls in hexadecimal are as follows:\n  - 0x\n00\n to 0x\n3F\n - Stop the engine immediately.\n  - 0x\n40\n to 0x\n7F\n - Control steering, with 0x\n40\n being extreme left, and 0x\n7F\n being extreme right.\n  - 0x\n80\n to 0x\nBF\n - Control acceleration, with 0x\n80\n being full throttle, and 0x\nBF\n being zero throttle.\n  - 0x\nc0\n to 0x\nFF\n - Control steering, with 0x\nC0\n being no braking, and 0x\nFF\n being full power braking.", 
             "title": "Cockroach"
+        }, 
+        {
+            "location": "/cockroach/#baja-actuator", 
+            "text": "This is an arduino project that interfaces with the rest of the DriveAI-Platform and actuates the vehicle according to the commands passed to it via serial.", 
+            "title": "baja-actuator"
+        }, 
+        {
+            "location": "/cockroach/#synchronization", 
+            "text": "The control section operates asynchronously from the rest of the computer, and has a variable refresh rate. By default, the controller updates at 100Hz. Serial can be sent to the controller at any time, and is collected and applied during the next cycle. At the default refresh rate, this results in around 10-12ms of latency in a worst-case scenario. This is suitably fast for driving at low speeds, and can be made much faster as needed.", 
+            "title": "Synchronization"
+        }, 
+        {
+            "location": "/cockroach/#encoding-and-transmission", 
+            "text": "Each time the controller is sent a command, it is in the form of one byte of data. We have written an encoder for said data that provides a balance between raw speed and movement precision. Each packet looks like this:   The first two bits of data indicate which control element is being set. This configuration allows for up to 4 individual controls, which we have assigned as follows:\n  - 0b 00  - Stop the engine immediately.\n  - 0b 01  - Control steering.\n  - 0b 10  - Control acceleration.\n  - 0b 11  - Control braking.  The last 6 bits of data represent the position value being written to that control. This translates to an unsigned integer from 0-63. We believe that 64 positions per control is adequate for our current vehicle. It is our intention in the future to increase the precision of these controls for use in larger vehicles. Therefore, the currently established ranges for the controls in hexadecimal are as follows:\n  - 0x 00  to 0x 3F  - Stop the engine immediately.\n  - 0x 40  to 0x 7F  - Control steering, with 0x 40  being extreme left, and 0x 7F  being extreme right.\n  - 0x 80  to 0x BF  - Control acceleration, with 0x 80  being full throttle, and 0x BF  being zero throttle.\n  - 0x c0  to 0x FF  - Control steering, with 0x C0  being no braking, and 0x FF  being full power braking.", 
+            "title": "Encoding and Transmission"
         }
     ]
 }
