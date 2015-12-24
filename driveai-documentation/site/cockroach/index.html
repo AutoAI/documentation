@@ -157,16 +157,20 @@
 <h3 id="encoding-and-transmission">Encoding and Transmission</h3>
 <p>Each time the controller is sent a command, it is in the form of one byte of data. We have written an encoder for said data that provides a balance between raw speed and movement precision. Each packet looks like this:</p>
 <p><img alt="control diagram" src="../cockroach-assets/control_diagram.png" /></p>
-<p>The first two bits of data indicate which control element is being set. This configuration allows for up to 4 individual controls, which we have assigned as follows:
-  * 0b<strong>00</strong> - Stop the engine immediately.
-  * 0b<strong>01</strong> - Control steering.
-  * 0b<strong>10</strong> - Control acceleration.
-  * 0b<strong>11</strong> - Control braking.</p>
-<p>The last 6 bits of data represent the position value being written to that control. This translates to an unsigned integer from 0-63. We believe that 64 positions per control is adequate for our current vehicle. It is our intention in the future to increase the precision of these controls for use in larger vehicles. Therefore, the currently established ranges for the controls in hexadecimal are as follows:
-  * 0x<strong>00</strong> to 0x<strong>3F</strong> - Stop the engine immediately.
-  * 0x<strong>40</strong> to 0x<strong>7F</strong> - Control steering, with 0x<strong>40</strong> being extreme left, and 0x<strong>7F</strong> being extreme right.
-  * 0x<strong>80</strong> to 0x<strong>BF</strong> - Control acceleration, with 0x<strong>80</strong> being full throttle, and 0x<strong>BF</strong> being zero throttle.
-  * 0x<strong>c0</strong> to 0x<strong>FF</strong> - Control steering, with 0x<strong>C0</strong> being no braking, and 0x<strong>FF</strong> being full power braking.</p>
+<p>The first two bits of data indicate which control element is being set. This configuration allows for up to 4 individual controls, which we have assigned as follows:</p>
+<ul>
+<li>0b<strong>00</strong> - Stop the engine immediately.</li>
+<li>0b<strong>01</strong> - Control steering.</li>
+<li>0b<strong>10</strong> - Control acceleration.</li>
+<li>0b<strong>11</strong> - Control braking.</li>
+</ul>
+<p>The last 6 bits of data represent the position value being written to that control. This translates to an unsigned integer from 0-63. We believe that 64 positions per control is adequate for our current vehicle. It is our intention in the future to increase the precision of these controls for use in larger vehicles. Therefore, the currently established ranges for the controls in hexadecimal are as follows:</p>
+<ul>
+<li>0x<strong>00</strong> to 0x<strong>3F</strong> - Stop the engine immediately.</li>
+<li>0x<strong>40</strong> to 0x<strong>7F</strong> - Control steering, with 0x<strong>40</strong> being extreme left, and 0x<strong>7F</strong> being extreme right.</li>
+<li>0x<strong>80</strong> to 0x<strong>BF</strong> - Control acceleration, with 0x<strong>80</strong> being full throttle, and 0x<strong>BF</strong> being zero throttle.</li>
+<li>0x<strong>c0</strong> to 0x<strong>FF</strong> - Control steering, with 0x<strong>C0</strong> being no braking, and 0x<strong>FF</strong> being full power braking.</li>
+</ul>
               
             </div>
           </div>
