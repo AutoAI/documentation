@@ -2,13 +2,13 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Welcome to DriveAI\n\n\nThis is where we document all of our previous work, current projects, and projections for the future. Here you will find detailed technical specifications for all of our past and current vehicles.", 
+            "text": "Welcome to DriveAI Technical Docs\n\n\nThis is where we document all of our previous work, current projects, and projections for the future. Here you will find detailed technical specifications for all of our past and current vehicles.", 
             "title": "Introduction"
         }, 
         {
-            "location": "/#welcome-to-driveai", 
+            "location": "/#welcome-to-driveai-technical-docs", 
             "text": "This is where we document all of our previous work, current projects, and projections for the future. Here you will find detailed technical specifications for all of our past and current vehicles.", 
-            "title": "Welcome to DriveAI"
+            "title": "Welcome to DriveAI Technical Docs"
         }, 
         {
             "location": "/birdie/", 

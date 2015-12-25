@@ -4,3 +4,4 @@ pages:
 - Birdie: birdie.md
 - Cockroach: cockroach.md
 theme: readthedocs
+site_favicon: favicon.png
