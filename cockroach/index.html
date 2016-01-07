@@ -8,7 +8,8 @@
   <title>Cockroach - DriveAI Technical Docs</title>
   
 
-  <link rel="shortcut icon" href="../img/favicon.ico">
+  <link rel="shortcut icon" href="../favicon.png">
+  
 
   
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
@@ -51,7 +52,14 @@
           
             <li>
     <li class="toctree-l1 ">
-        <a class="" href="..">Introduction</a>
+        <a class="" href="..">DriveAI</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../knowledge/">Knowledge</a>
         
     </li>
 <li>
@@ -68,6 +76,20 @@
         <a class="current" href="./">Cockroach</a>
         
             <ul>
+            
+                <li class="toctree-l3"><a href="#the-cockroach">The Cockroach</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#hardware">Hardware</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#electronics">Electronics</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#software">Software</a></li>
+                
+                    <li><a class="toctree-l4" href="#actuation">Actuation</a></li>
+                
             
             </ul>
         
@@ -106,7 +128,57 @@
           <div role="main">
             <div class="section">
               
-                
+                <h1 id="the-cockroach">The Cockroach</h1>
+<p>The "Cockroach" is the colloquial name for our first vehicle. It was built over the summer of 2015 by DriveAI. Below is a breakdown of the various aspects of its design.</p>
+<h1 id="hardware">Hardware</h1>
+<ul>
+<li>The Cockroach began as a <a href="http://www.scooterx.biz/en/gas-go-karts/20-49cc-scooterx-baja-off-road-go-kart.html">ScooterX Baja 49cc Go-Kart</a>.</li>
+<li>The frame has been heavily modified. We removed the seat and bolted a sheet of particle board to the frame in its place to house all of the electronics. A custom metal body was bolted to the existing frame to give a more car-like appearance and protect the internals.</li>
+<li>A custom <a href="https://github.com/DriveAI/cockroach-actuator/tree/master/parts">3D-printed gas gas cable actuator housing</a> was designed, and uses a standard size servo motor to control acceleration.</li>
+<li>Steering and braking were actuated using <a href="https://www.firgelliauto.com/products/feedback-rod-actuator">Firgelli Automations linear actuators</a> bolted directly to the steering column and brake cable, respectively.</li>
+</ul>
+<h1 id="electronics">Electronics</h1>
+<ul>
+<li>A 12v lead acid car battery was strapped to the front of the frame to power the systems.</li>
+<li>The battery was connected to a combination voltage and current meter to monitor power draw and battery life.</li>
+<li>The electrical harness was turned on and off by a 20 amp circuit breaker, which also served as a safety device.</li>
+<li>The main power cables supplying the terminal blocks were 8 gauge stranded copper lines.</li>
+<li>Power distribustion and grounding was handled using screw-type terminal blocks.</li>
+<li>The visual processor and decision-making computer was an <a href="http://www.nvidia.com/object/jetson-tk1-embedded-dev-kit.html">Nvidia Jetson Tk1</a>.</li>
+<li>All visual data was collected from a <a href="https://www.stereolabs.com/zed/specs/">StereoLabs Zed Camera</a> and sent to the Jetson over USB 3.0 in real time.</li>
+<li>Actuation was controlled by an <a href="https://www.arduino.cc/en/Main/ArduinoBoardMega2560">Arduino Mega 2560</a> which communicated with the Jetson via serial over USB 2.0.</li>
+<li>The actuators themselves were each powered by an [Arduino PWM Motor Shield] (http://www.robotshop.com/en/10a-dc-motor-driver-arduino-shield.html) attached to the terminal blocks.</li>
+<li>A wireless router is bolted to the underside of the system to allow easy wireless access to be able to ssh into the system from far away.</li>
+<li>12v to 5v conversion for the arduino and sensors was done by a <a href="http://www.ebay.com/itm/LM2596-Buck-Step-down-Power-Converter-Module-DC-4-0-40-to-1-3-37V-LED-Voltmeter-/400802470941?hash=item5d51b05c1d:g:XyoAAOSwLa9UXJBL">DC to DC converter</a>.</li>
+</ul>
+<h1 id="software">Software</h1>
+<ul>
+<li>The Jetson is running the custom ARM build of Ubuntu 14.04 LTS that Nvidia shipped it with.</li>
+<li>Our perception package uses the ZED SDK and is written primarily in (C++).</li>
+<li>The Arduino actuation controller is written in their proprietary language and is compiled down into AVR.</li>
+<li>The software uses the serial interface built into Linux to send commands to the Arduino.</li>
+</ul>
+<h2 id="actuation">Actuation</h2>
+<p>Actuation of the Cockroach is controlled by an arduino project that interfaces with the rest of the DriveAI-Platform and operates according to the commands passed to it via serial. </p>
+<h3 id="synchronization">Synchronization</h3>
+<p>The control section operates asynchronously from the rest of the computer, and has a variable refresh rate. By default, the controller updates at 100Hz. Serial can be sent to the controller at any time, and is collected and applied during the next cycle. At the default refresh rate, this results in at most approximately 10-12ms of latency. This is acceptably fast for driving at low speeds, and can be made much faster as needed.</p>
+<h3 id="encoding-and-transmission">Encoding and Transmission</h3>
+<p>Each time the controller is sent a command, it is in the form of one byte of data. We have written an encoder for said data that provides a balance between raw speed and movement precision. Each packet looks like this:</p>
+<p><img alt="control diagram" src="../cockroach-assets/control_diagram.png" /></p>
+<p>The first two bits of data indicate which control element is being set. This configuration allows for up to 4 individual controls, which we have assigned as follows:</p>
+<ul>
+<li>0b<strong>00</strong> - Stop the engine immediately.</li>
+<li>0b<strong>01</strong> - Control steering.</li>
+<li>0b<strong>10</strong> - Control acceleration.</li>
+<li>0b<strong>11</strong> - Control braking.</li>
+</ul>
+<p>The last 6 bits of data represent the position value being written to that control. This translates to an unsigned integer from 0-63. We believe that 64 positions per control is adequate for our current vehicle. It is our intention in the future to increase the precision of these controls for use in larger vehicles. Therefore, the currently established ranges for the controls in hexadecimal are as follows:</p>
+<ul>
+<li>0x<strong>00</strong> to 0x<strong>3F</strong> - Stop the engine immediately.</li>
+<li>0x<strong>40</strong> to 0x<strong>7F</strong> - Control steering, with 0x<strong>40</strong> being extreme left, and 0x<strong>7F</strong> being extreme right.</li>
+<li>0x<strong>80</strong> to 0x<strong>BF</strong> - Control acceleration, with 0x<strong>80</strong> being full throttle, and 0x<strong>BF</strong> being zero throttle.</li>
+<li>0x<strong>c0</strong> to 0x<strong>FF</strong> - Control steering, with 0x<strong>C0</strong> being no braking, and 0x<strong>FF</strong> being full power braking.</li>
+</ul>
               
             </div>
           </div>
