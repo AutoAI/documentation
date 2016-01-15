@@ -6,6 +6,7 @@ TODO
 #Current Tasks
 - Building out our knowledge base
 - Building the [Birdie](docs.driveai.org/birdie/)
+- Learning how to develop ROS Modules
 
 ## Getting Started
 In order to get started, you'll need to become familiar with the following languages and services:
