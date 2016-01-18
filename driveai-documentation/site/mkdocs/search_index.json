@@ -2,13 +2,58 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Welcome to DriveAI Technical Docs\n\n\nThis is where we document all of our previous work, current projects, and projections for the future. Here you will find detailed technical specifications for all of our past and current vehicles.", 
+            "text": "Welcome to DriveAI Technical Docs\n\n\nThis is where we document all of our previous work, current projects, and projections for the future. Here you will find detailed technical specifications for all of our past and current vehicles.\n\n\nWho We Are\n\n\nCurrent Tasks\n\n\nGetting Started\n\n\nIn order to get started, you'll need to become familiar with the following languages and services:\n\n\nProgramming\n\n\n\n\nC++\n is used for our perception packages\n\n\nPython\n is used for control software\n\n\nROS\n ties all of our systems together\n\n\n\n\nEnvironments\n\n\n\n\nLinux\n, specifically Ubuntu, is used by all of our members for developing software.\n\n\n\n\nVersion Control\n\n\n\n\nGit\n knowledge is essential. We use GitHub to manage our codebase and keep everything up to date and organized.\n\n\n\n\nThe DriveAI Knowledge Base\n\n\nRead through what we know so far! Getting up to speed on our current knowledge base is the fastest way to get to the front lines of development.\n\n\nSlack\n\n\nWe use Slack as our primary communications interface. When you're comfortable with everything listed above and want to get involved with the team, send a message to \ncommunity@driveAI.org\n and someone will invite you to our Slack team. That's all there is to it!\n\n\nPrevious Work", 
             "title": "Introduction"
         }, 
         {
             "location": "/#welcome-to-driveai-technical-docs", 
             "text": "This is where we document all of our previous work, current projects, and projections for the future. Here you will find detailed technical specifications for all of our past and current vehicles.", 
             "title": "Welcome to DriveAI Technical Docs"
+        }, 
+        {
+            "location": "/#who-we-are", 
+            "text": "", 
+            "title": "Who We Are"
+        }, 
+        {
+            "location": "/#current-tasks", 
+            "text": "", 
+            "title": "Current Tasks"
+        }, 
+        {
+            "location": "/#getting-started", 
+            "text": "In order to get started, you'll need to become familiar with the following languages and services:", 
+            "title": "Getting Started"
+        }, 
+        {
+            "location": "/#programming", 
+            "text": "C++  is used for our perception packages  Python  is used for control software  ROS  ties all of our systems together", 
+            "title": "Programming"
+        }, 
+        {
+            "location": "/#environments", 
+            "text": "Linux , specifically Ubuntu, is used by all of our members for developing software.", 
+            "title": "Environments"
+        }, 
+        {
+            "location": "/#version-control", 
+            "text": "Git  knowledge is essential. We use GitHub to manage our codebase and keep everything up to date and organized.", 
+            "title": "Version Control"
+        }, 
+        {
+            "location": "/#the-driveai-knowledge-base", 
+            "text": "Read through what we know so far! Getting up to speed on our current knowledge base is the fastest way to get to the front lines of development.", 
+            "title": "The DriveAI Knowledge Base"
+        }, 
+        {
+            "location": "/#slack", 
+            "text": "We use Slack as our primary communications interface. When you're comfortable with everything listed above and want to get involved with the team, send a message to  community@driveAI.org  and someone will invite you to our Slack team. That's all there is to it!", 
+            "title": "Slack"
+        }, 
+        {
+            "location": "/#previous-work", 
+            "text": "", 
+            "title": "Previous Work"
         }, 
         {
             "location": "/birdie/", 
