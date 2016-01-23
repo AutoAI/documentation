@@ -2,13 +2,58 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Welcome to DriveAI Technical Docs\n\n\nThis is where we document all of our previous work, current projects, and projections for the future. Here you will find detailed technical specifications for all of our past and current vehicles.", 
+            "text": "Technical Docs\n\n\nThis is where we document all of our previous work, current projects, and projections for the future. Here you will find detailed technical specifications for all of our past and current vehicles.\n\n\nWho We Are\n\n\nTODO\n\n\nCurrent Tasks\n\n\n\n\nBuilding out our knowledge base\n\n\nBuilding the \nBirdie\n\n\n\n\nGetting Started\n\n\nIn order to get started, you'll need to become familiar with the following languages and services:\n\n\n\n\nC/C++\n all our production code is written in C/C++\n\n\nPython\n for rapid prototyping\n\n\nROS\n ties all of our systems together\n\n\nLinux\n, specifically Ubuntu, is used by all of our members for developing software. Our production code runs on Ubuntu 14.04 LTS\n\n\nGit\n knowledge is essential. We use GitHub to manage our codebase and keep everything up to date and organized. We look forward to your pull requests!\n\n\n\n\nThe DriveAI Knowledge Base\n\n\nRead through what we know so far! Getting up to speed on our current knowledge base is the fastest way to get to the front lines of development.\n\n\nSlack\n\n\nWe use Slack as our primary communications interface. When you're comfortable with everything listed above and want to get involved with the team, send a message to \ncommunity@driveai.org\n and someone will invite you to our Slack team. That's all there is to it!\n\n\nCompleted Vehicles\n\n\n\n\nCockroach", 
+            "title": "DriveAI"
+        }, 
+        {
+            "location": "/#technical-docs", 
+            "text": "This is where we document all of our previous work, current projects, and projections for the future. Here you will find detailed technical specifications for all of our past and current vehicles.", 
+            "title": "Technical Docs"
+        }, 
+        {
+            "location": "/#who-we-are", 
+            "text": "TODO", 
+            "title": "Who We Are"
+        }, 
+        {
+            "location": "/#current-tasks", 
+            "text": "Building out our knowledge base  Building the  Birdie", 
+            "title": "Current Tasks"
+        }, 
+        {
+            "location": "/#getting-started", 
+            "text": "In order to get started, you'll need to become familiar with the following languages and services:   C/C++  all our production code is written in C/C++  Python  for rapid prototyping  ROS  ties all of our systems together  Linux , specifically Ubuntu, is used by all of our members for developing software. Our production code runs on Ubuntu 14.04 LTS  Git  knowledge is essential. We use GitHub to manage our codebase and keep everything up to date and organized. We look forward to your pull requests!", 
+            "title": "Getting Started"
+        }, 
+        {
+            "location": "/#the-driveai-knowledge-base", 
+            "text": "Read through what we know so far! Getting up to speed on our current knowledge base is the fastest way to get to the front lines of development.", 
+            "title": "The DriveAI Knowledge Base"
+        }, 
+        {
+            "location": "/#slack", 
+            "text": "We use Slack as our primary communications interface. When you're comfortable with everything listed above and want to get involved with the team, send a message to  community@driveai.org  and someone will invite you to our Slack team. That's all there is to it!", 
+            "title": "Slack"
+        }, 
+        {
+            "location": "/#completed-vehicles", 
+            "text": "Cockroach", 
+            "title": "Completed Vehicles"
+        }, 
+        {
+            "location": "/knowledge/", 
+            "text": "Introduction\n\n\nThis is where everything we know about self driving vehicles will be found. We're eager to have people join, learn from, and contribute to our project.\n\n\nSensors\n\n\nThere's a few different types of sensors...\n\n\nTODO", 
+            "title": "Knowledge"
+        }, 
+        {
+            "location": "/knowledge/#introduction", 
+            "text": "This is where everything we know about self driving vehicles will be found. We're eager to have people join, learn from, and contribute to our project.", 
             "title": "Introduction"
         }, 
         {
-            "location": "/#welcome-to-driveai-technical-docs", 
-            "text": "This is where we document all of our previous work, current projects, and projections for the future. Here you will find detailed technical specifications for all of our past and current vehicles.", 
-            "title": "Welcome to DriveAI Technical Docs"
+            "location": "/knowledge/#sensors", 
+            "text": "There's a few different types of sensors...  TODO", 
+            "title": "Sensors"
         }, 
         {
             "location": "/birdie/", 
