@@ -36,6 +36,9 @@ Lidar works by shooting a laser pulse and measuring the time it takes for the li
 
 Because of the precision required of them, lidar units start at $8000 and can cost many times more. A new technology, solid-sate lidar, promises to reduce that cost (supposedly by [next year](http://spectrum.ieee.org/cars-that-think/transportation/sensors/quanergy-solid-state-lidar)). Solid-state lidar works mostly the same, but instead of having moving parts, it changes the angle of the laser pulse by sending it through a crystal to bend the light at an electronically-adjustable angle. While this doesn't allow for full 360-degree coverage, a few units together could provide the same sensory coverage as current units for a cost many times lower.
 
+## Radar
+Radar is in some ways similar to lidar. Radar works by firing pulses of radio waves in a general direction and measuring how those waves are reflected by objects they encounter. Radar tends to be much less precise than lidar, but operates more quickly and reliably, making it helpful for tasks like keeping a safe following distance. Radar also offers the advantage that it can directly measure the speed of objects (based on the wavelengths of radio wave reflections), a task which is deceptively tricky for other types of sensors.
+
 ## Cameras
 Cameras are used by autonomous vehicles to read visual information from the environment, including lane markings, traffic lights, and signs. While people have no problem interpreting this visual information, telling a computer how to interpret images in a meaningful way is an area of active research and modern techniques often require lots of computational power.
 
