@@ -1,7 +1,8 @@
 # Technical Docs
 This is where we document all of our previous work, current projects, and projections for the future. Here you will find detailed technical specifications for all of our past and current vehicles.
 #Who We Are
-TODO
+
+We develop open source software for autonomous vehicles so anyone can build one. 
 
 #Current Tasks
 - Building out our knowledge base
@@ -20,7 +21,7 @@ In order to get started, you'll need to become familiar with the following langu
 ## [The DriveAI Knowledge Base](/knowledge)
 Read through what we know so far! Getting up to speed on our current knowledge base is the fastest way to get to the front lines of development.
 
-##Slack
+## Get Involved!
 We use Slack as our primary communications interface. When you're comfortable with everything listed above and want to get involved with the team, send a message to [community@driveai.org](mailto:community@driveai.org) and someone will invite you to our Slack team. That's all there is to it!
 
 # Completed Vehicles
