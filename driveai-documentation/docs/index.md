@@ -1,28 +1,22 @@
-# Technical Docs
-This is where we document all of our previous work, current projects, and projections for the future. Here you will find detailed technical specifications for all of our past and current vehicles.
-#Who We Are
+# DriveAI Technical Docs
+This is where the engineers at DriveAI document all of our previous work, current projects, and projections for the future. Here you will find technical details for all of our past and current vehicles.
 
-We develop open source software for autonomous vehicles so anyone can build one. 
-
-#Current Tasks
-- Building out our knowledge base
-- Building the [Birdie](/birdie/)
-- Learning how to develop ROS Modules
+# Who We Are
+DriveAI is a 501(c)(3) nonprofit organization dedicated to the research and development of autonomous vehicles. We're a team of motivated engineers and students that are looking to bring the community together to understand and build autonomous vehicles. For more information, visit our [website](http://driveai.org/).
 
 ## Getting Started
-In order to get started, you'll need to become familiar with the following languages and services:
+If you're thinking about using our software to make your own autonomous vehicle, you'll find familiarity with the following languages and services to be helpful:
 
-- *C/C++*, as all our production code is written in C/C++
-- *Python*, for rapid prototyping
-- *ROS*, which ties all of our systems together
-- *Linux*, specifically Ubuntu, which is used by all of our members for developing software. Our production code runs on Ubuntu 14.04 LTS
-- *Git*, knowledge of which is essential. We use GitHub to manage our codebase and keep everything up to date and organized. We look forward to your pull requests!
+- *C/C++*, the programming languages that the majority of our production code is written in
+- *Python*, a programming language that's great for rapid prototyping
+- *ROS*, the framework that ties all of our systems together
+- *Linux*, specifically Ubuntu 14.04 LTS, the operating system used by our developers and by our vehicles
+- *Git*, a version contol solution
 
-## The DriveAI Knowledge Base
-Read through our knowledge base [**here**](/knowledge) to learn what we know so far! Getting up to speed on our current knowledge base is the fastest way to get to the front lines of development.
+Read through our [knowledge base](/knowledge) to learn some vehicle autonomy basics. The knowledge base is written assuming no prior knowledge and is a fast we to get up to speed.
 
-## Get Involved!
-We use Slack as our primary communications interface. When you're comfortable with everything listed above and want to get involved with the team, send a message to [community@driveai.org](mailto:community@driveai.org) and someone will invite you to our Slack team. That's all there is to it!
+## Getting involved
+We use Slack as our primary communications interface. When you're comfortable with everything listed above and want to get involved with the team, send us an email at [community@driveai.org](mailto:community@driveai.org) and someone will invite you to our Slack team. We look forward to having you in our discussions!
 
 # Completed Vehicles
-- [Cockroach](/cockroach)
+- [The Cockroach](/cockroach)
