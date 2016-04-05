@@ -2,43 +2,28 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Welcome to DriveAI Technical Docs\n\n\nThis is where we document all of our previous work, current projects, and projections for the future. Here you will find detailed technical specifications for all of our past and current vehicles.\n\n\nWho We Are\n\n\nCurrent Tasks\n\n\nGetting Started\n\n\nIn order to get started, you'll need to become familiar with the following languages and services:\n\n\nProgramming\n\n\n\n\nC++\n is used for our perception packages\n\n\nPython\n is used for control software\n\n\nROS\n ties all of our systems together\n\n\n\n\nEnvironments\n\n\n\n\nLinux\n, specifically Ubuntu, is used by all of our members for developing software.\n\n\n\n\nVersion Control\n\n\n\n\nGit\n knowledge is essential. We use GitHub to manage our codebase and keep everything up to date and organized.\n\n\n\n\nThe DriveAI Knowledge Base\n\n\nRead through what we know so far! Getting up to speed on our current knowledge base is the fastest way to get to the front lines of development.\n\n\nSlack\n\n\nWe use Slack as our primary communications interface. When you're comfortable with everything listed above and want to get involved with the team, send a message to \ncommunity@driveAI.org\n and someone will invite you to our Slack team. That's all there is to it!\n\n\nPrevious Work", 
-            "title": "Introduction"
+            "text": "Technical Docs\n\n\nThis is where we document all of our previous work, current projects, and projections for the future. Here you will find detailed technical specifications for all of our past and current vehicles.\n\n\nWho We Are\n\n\nTODO\n\n\nCurrent Tasks\n\n\n\n\nBuilding out our knowledge base\n\n\nBuilding the \nBirdie\n\n\nLearning how to develop ROS Modules\n\n\n\n\nGetting Started\n\n\nIn order to get started, you'll need to become familiar with the following languages and services:\n\n\n\n\nC/C++\n all our production code is written in C/C++\n\n\nPython\n for rapid prototyping\n\n\nROS\n ties all of our systems together\n\n\nLinux\n, specifically Ubuntu, is used by all of our members for developing software. Our production code runs on Ubuntu 14.04 LTS\n\n\nGit\n knowledge is essential. We use GitHub to manage our codebase and keep everything up to date and organized. We look forward to your pull requests!\n\n\n\n\nThe DriveAI Knowledge Base\n\n\nRead through what we know so far! Getting up to speed on our current knowledge base is the fastest way to get to the front lines of development.\n\n\nSlack\n\n\nWe use Slack as our primary communications interface. When you're comfortable with everything listed above and want to get involved with the team, send a message to \ncommunity@driveai.org\n and someone will invite you to our Slack team. That's all there is to it!\n\n\nCompleted Vehicles\n\n\n\n\nCockroach", 
+            "title": "DriveAI"
         }, 
         {
-            "location": "/#welcome-to-driveai-technical-docs", 
+            "location": "/#technical-docs", 
             "text": "This is where we document all of our previous work, current projects, and projections for the future. Here you will find detailed technical specifications for all of our past and current vehicles.", 
-            "title": "Welcome to DriveAI Technical Docs"
+            "title": "Technical Docs"
         }, 
         {
             "location": "/#who-we-are", 
-            "text": "", 
+            "text": "TODO", 
             "title": "Who We Are"
         }, 
         {
             "location": "/#current-tasks", 
-            "text": "", 
+            "text": "Building out our knowledge base  Building the  Birdie  Learning how to develop ROS Modules", 
             "title": "Current Tasks"
         }, 
         {
             "location": "/#getting-started", 
-            "text": "In order to get started, you'll need to become familiar with the following languages and services:", 
+            "text": "In order to get started, you'll need to become familiar with the following languages and services:   C/C++  all our production code is written in C/C++  Python  for rapid prototyping  ROS  ties all of our systems together  Linux , specifically Ubuntu, is used by all of our members for developing software. Our production code runs on Ubuntu 14.04 LTS  Git  knowledge is essential. We use GitHub to manage our codebase and keep everything up to date and organized. We look forward to your pull requests!", 
             "title": "Getting Started"
-        }, 
-        {
-            "location": "/#programming", 
-            "text": "C++  is used for our perception packages  Python  is used for control software  ROS  ties all of our systems together", 
-            "title": "Programming"
-        }, 
-        {
-            "location": "/#environments", 
-            "text": "Linux , specifically Ubuntu, is used by all of our members for developing software.", 
-            "title": "Environments"
-        }, 
-        {
-            "location": "/#version-control", 
-            "text": "Git  knowledge is essential. We use GitHub to manage our codebase and keep everything up to date and organized.", 
-            "title": "Version Control"
         }, 
         {
             "location": "/#the-driveai-knowledge-base", 
@@ -47,17 +32,32 @@
         }, 
         {
             "location": "/#slack", 
-            "text": "We use Slack as our primary communications interface. When you're comfortable with everything listed above and want to get involved with the team, send a message to  community@driveAI.org  and someone will invite you to our Slack team. That's all there is to it!", 
+            "text": "We use Slack as our primary communications interface. When you're comfortable with everything listed above and want to get involved with the team, send a message to  community@driveai.org  and someone will invite you to our Slack team. That's all there is to it!", 
             "title": "Slack"
         }, 
         {
-            "location": "/#previous-work", 
-            "text": "", 
-            "title": "Previous Work"
+            "location": "/#completed-vehicles", 
+            "text": "Cockroach", 
+            "title": "Completed Vehicles"
+        }, 
+        {
+            "location": "/knowledge/", 
+            "text": "Introduction\n\n\nThis is where everything we know about self driving vehicles will be found. We're eager to have people join, learn from, and contribute to our project.\n\n\nSensors\n\n\nThere's a few different types of sensors...\n\n\nTODO", 
+            "title": "Knowledge"
+        }, 
+        {
+            "location": "/knowledge/#introduction", 
+            "text": "This is where everything we know about self driving vehicles will be found. We're eager to have people join, learn from, and contribute to our project.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/knowledge/#sensors", 
+            "text": "There's a few different types of sensors...  TODO", 
+            "title": "Sensors"
         }, 
         {
             "location": "/birdie/", 
-            "text": "The Birdie\n\n\nThe Birdie is our second vehicle. It will be built starting in the Spring of 2016 by members of the DriveAI team.\n\n\nIntroduction\n\n\nAfter completing the Cockroach, we decided that our next vehicle should be larger and more robust to accomodate for our growing capabilities. The go kart frame has reached its maximum potential, and a new vehicle is in order that can expand to meet our needs is needed. Therefore, a street legal golf cart capable of speeds of 25mph with a range of at least 30 miles will be our next purchase.", 
+            "text": "The Birdie\n\n\nThe Birdie is our second vehicle. It will be built starting in the Spring of 2016 by members of the DriveAI team.\n\n\nIntroduction\n\n\nAfter completing the Cockroach, we decided that our next vehicle should be larger and more robust to accomodate for our growing capabilities. The go kart frame has reached its maximum potential, and a new vehicle is in order that can expand to meet our needs is needed. Therefore, a street legal golf cart capable of speeds of 25mph with a range of at least 30 miles will be our next purchase.\nWe are currently in the process of researching different golf carts on the market with the intention to purchase one in the coming months. As soon as the vehicle is in our possession we will begin work on the autonomous drive system.", 
             "title": "Birdie"
         }, 
         {
@@ -67,7 +67,7 @@
         }, 
         {
             "location": "/birdie/#introduction", 
-            "text": "After completing the Cockroach, we decided that our next vehicle should be larger and more robust to accomodate for our growing capabilities. The go kart frame has reached its maximum potential, and a new vehicle is in order that can expand to meet our needs is needed. Therefore, a street legal golf cart capable of speeds of 25mph with a range of at least 30 miles will be our next purchase.", 
+            "text": "After completing the Cockroach, we decided that our next vehicle should be larger and more robust to accomodate for our growing capabilities. The go kart frame has reached its maximum potential, and a new vehicle is in order that can expand to meet our needs is needed. Therefore, a street legal golf cart capable of speeds of 25mph with a range of at least 30 miles will be our next purchase.\nWe are currently in the process of researching different golf carts on the market with the intention to purchase one in the coming months. As soon as the vehicle is in our possession we will begin work on the autonomous drive system.", 
             "title": "Introduction"
         }, 
         {
