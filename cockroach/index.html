@@ -3,7 +3,10 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
   
   <title>Cockroach - DriveAI Technical Docs</title>
   
@@ -22,6 +25,8 @@
   <script>
     // Current page data
     var mkdocs_page_name = "Cockroach";
+    var mkdocs_page_input_path = "cockroach.md";
+    var mkdocs_page_url = "/cockroach/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -129,12 +134,13 @@
             <div class="section">
               
                 <h1 id="the-cockroach">The Cockroach</h1>
-<p>The "Cockroach" is the colloquial name for our first vehicle. It was built over the summer of 2015 by DriveAI. Below is a breakdown of the various aspects of its design.</p>
+<p>The "Cockroach" is the colloquial name for our first vehicle. It was built over the summer of 2015 by DriveAI. Below is a breakdown of the various aspects of its design.
+<img alt="Cockroach Front" src="../cockroach-assets/crfront.jpg" /></p>
 <h1 id="hardware">Hardware</h1>
 <ul>
 <li>The Cockroach began as a <a href="http://www.scooterx.biz/en/gas-go-karts/20-49cc-scooterx-baja-off-road-go-kart.html">ScooterX Baja 49cc Go-Kart</a>.</li>
 <li>The frame has been heavily modified. We removed the seat and bolted a sheet of particle board to the frame in its place to house all of the electronics. A custom metal body was bolted to the existing frame to give a more car-like appearance and protect the internals.</li>
-<li>A custom <a href="https://github.com/DriveAI/cockroach-actuator/tree/master/parts">3D-printed gas gas cable actuator housing</a> was designed, and uses a standard size servo motor to control acceleration.</li>
+<li>A custom <a href="https://github.com/DriveAI/cockroach-actuator/tree/master/parts">3D-printed gas cable actuator housing</a> was designed, and uses a standard size servo motor to control acceleration.</li>
 <li>Steering and braking were actuated using <a href="https://www.firgelliauto.com/products/feedback-rod-actuator">Firgelli Automations linear actuators</a> bolted directly to the steering column and brake cable, respectively.</li>
 </ul>
 <h1 id="electronics">Electronics</h1>
@@ -149,7 +155,9 @@
 <li>Actuation was controlled by an <a href="https://www.arduino.cc/en/Main/ArduinoBoardMega2560">Arduino Mega 2560</a> which communicated with the Jetson via serial over USB 2.0.</li>
 <li>The actuators themselves were each powered by an [Arduino PWM Motor Shield] (http://www.robotshop.com/en/10a-dc-motor-driver-arduino-shield.html) attached to the terminal blocks.</li>
 <li>A wireless router is bolted to the underside of the system to allow easy wireless access to be able to ssh into the system from far away.</li>
-<li>12v to 5v conversion for the arduino and sensors was done by a <a href="http://www.ebay.com/itm/LM2596-Buck-Step-down-Power-Converter-Module-DC-4-0-40-to-1-3-37V-LED-Voltmeter-/400802470941?hash=item5d51b05c1d:g:XyoAAOSwLa9UXJBL">DC to DC converter</a>.</li>
+<li>12v to 5v conversion for the arduino and sensors was done by a <a href="http://www.ebay.com/itm/LM2596-Buck-Step-down-Power-Converter-Module-DC-4-0-40-to-1-3-37V-LED-Voltmeter-/400802470941?hash=item5d51b05c1d:g:XyoAAOSwLa9UXJBL">DC to DC converter</a>.
+<img alt="control diagram" src="../cockroach-assets/control_diagram.png" />
+Note that the actuator for the brake applied tension to the brake cable itself, not the brake pad.</li>
 </ul>
 <h1 id="software">Software</h1>
 <ul>
