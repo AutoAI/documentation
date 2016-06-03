@@ -18,7 +18,7 @@ In order to get started, you'll need to become familiar with the following langu
 - *Linux*, specifically Ubuntu, which is used by all of our members for developing software. Our production code runs on Ubuntu 14.04 LTS
 - *Git*, knowledge of which is essential. We use GitHub to manage our codebase and keep everything up to date and organized. We look forward to your pull requests!
 
-## The DriveAI Knowledge Base
+## The AutoAI Knowledge Base
 Read through our knowledge base [**here**](/knowledge) to learn what we know so far! Getting up to speed on our current knowledge base is the fastest way to get to the front lines of development.
 
 ## Get Involved!

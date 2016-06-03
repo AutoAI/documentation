@@ -1,5 +1,5 @@
 # The Cockroach
-The "Cockroach" is the colloquial name for our first vehicle. It was built over the summer of 2015 by DriveAI. Below is a breakdown of the various aspects of its design.
+The "Cockroach" is the colloquial name for our first vehicle. It was built over the summer of 2015 by AutoAI. Below is a breakdown of the various aspects of its design.
 ![Cockroach Front](cockroach-assets/crfront.jpg)
 
 #Hardware
@@ -29,7 +29,7 @@ Note that the actuator for the brake applied tension to the brake cable itself, 
 - The software uses the serial interface built into Linux to send commands to the Arduino.
 
 ## Actuation
-Actuation of the Cockroach is controlled by an arduino project that interfaces with the rest of the DriveAI-Platform and operates according to the commands passed to it via serial. 
+Actuation of the Cockroach is controlled by an arduino project that interfaces with the rest of the AutoAI-Platform and operates according to the commands passed to it via serial. 
 
 ###Synchronization
 The control section operates asynchronously from the rest of the computer, and has a variable refresh rate. By default, the controller updates at 100Hz. Serial can be sent to the controller at any time, and is collected and applied during the next cycle. At the default refresh rate, this results in at most approximately 10-12ms of latency. This is acceptably fast for driving at low speeds, and can be made much faster as needed.
