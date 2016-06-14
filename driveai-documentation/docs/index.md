@@ -13,10 +13,18 @@ If you're thinking about using our software to make your own autonomous vehicle,
 - *Linux*, specifically Ubuntu 14.04 LTS, the operating system used by our developers and by our vehicles
 - *Git*, a version contol solution
 
+<<<<<<< HEAD
+## The AutoAI Knowledge Base
+Read through our knowledge base [**here**](/knowledge) to learn what we know so far! Getting up to speed on our current knowledge base is the fastest way to get to the front lines of development.
+
+## Get Involved!
+We use Slack as our primary communications interface. When you're comfortable with everything listed above and want to get involved with the team, send a message to [community@autoai.org](mailto:community@autoai.org) and someone will invite you to our Slack team. That's all there is to it!
+=======
 Read through our [knowledge base](/knowledge) to learn some vehicle autonomy basics. The knowledge base is written assuming no prior knowledge and is a fast we to get up to speed.
 
 ## Getting involved
 We use Slack as our primary communications interface. When you're comfortable with everything listed above and want to get involved with the team, send us an email at [community@driveai.org](mailto:community@driveai.org) and someone will invite you to our Slack team. We look forward to having you in our discussions!
+>>>>>>> ff02e750aaaf7cb82b3b1e6dff22c0989fc370e0
 
 # Completed Vehicles
 - [The Cockroach](/cockroach)
