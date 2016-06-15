@@ -22,7 +22,7 @@ We use Slack as our primary communications interface. When you're comfortable wi
 Read through our [knowledge base](/knowledge) to learn some vehicle autonomy basics. The knowledge base is written assuming no prior knowledge and is a fast way to get up to speed.
 
 ## Getting involved
-We use Slack as our primary communications interface. When you're comfortable with everything listed above and want to get involved with the team, send us an email at [community@driveai.org](mailto:community@autoai.org) and someone will invite you to our Slack team. We look forward to having you in our discussions!
+We use Slack as our primary communications interface. When you're comfortable with everything listed above and want to get involved with the team, send us an email at [community@autoai.org](mailto:community@autoai.org) and someone will invite you to our Slack team. We look forward to having you in our discussions!
 
 # Completed Vehicles
 - [The Cockroach](/cockroach)
