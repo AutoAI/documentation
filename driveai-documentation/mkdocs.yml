@@ -1,6 +1,6 @@
-site_name: DriveAI Technical Docs
+site_name: AutoAI Technical Docs
 pages:
-- DriveAI: index.md
+- AutoAI: index.md
 - Knowledge: knowledge.md
 - Birdie: birdie.md
 - Cockroach: cockroach.md
