@@ -11,9 +11,11 @@ The Birdie is an early 2000s [Club Car] (http://www.clubcar.com/us/en/golf-opera
 - All miscellaneous electromechanical systems on the cart have been removed and replaced with solid-state control logic. This was done to make actuation simpler and more reliable, while decreasing weight and improving range.
 - - The electrical system is protected with a [200A Fuse] (http://kellycontroller.com/ane-200a-fuse-p-196.html)
 - (TODO) auxiliary systems other than the drivetrain require 12v, so a large buck converter was installed.
+
 ##Actuation
 - The steering column has been completely removed, and a 6" stroke [linear actuator] (https://www.firgelliauto.com/products/feedback-rod-actuator) has been attached where the rack and pinion mechanism would usually be.
 - The brake pedal has been removed and replaced with a 2" stroke [linear actuator] (https://www.firgelliauto.com/products/feedback-rod-actuator) to supply braking force.
+
 ###Actuation Controller 3.0
 After our second actuation controller was destroyed during a testing accident, we decided that the next iteration of our control system needed to be powerful and reliable. Thus, we intentionally overbuilt our actuation controller 3.0 as such:
 - The steering and braking linear actuators consume 5A @ 12V each, so we control them with [Cytron 13A DC Motor Controllers] (http://www.robotshop.com/en/cytron-13a-5-30v-single-dc-motor-controller.html). These controllers include 13A of rated capacity and a full NMOS H-Bridge for bidirectional high-power operation.
