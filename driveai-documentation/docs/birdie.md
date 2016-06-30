@@ -1,7 +1,7 @@
 #The Birdie
 The Birdie is our second vehicle. It is currently being worked on by members of the AutoAI team.
 #Introduction
-After completing the Cockroach, we decided that our next vehicle should be larger and more robust to accomodate for our growing capabilities. The go kart frame has reached its maximum potential, and a new vehicle is in order that can expand to meet our needs is needed. Therefore, we bought a golf cart capable of reaching 20mph with a range of about 10 miles in order to continue growing.
+After completing the Cockroach, we decided that our next vehicle should be larger and more robust to accomodate for our growing capabilities. We wanted The go kart frame has reached its maximum potential, and can not be developed any further. We wanted something capable of carrying people around that had a familiar form factor. Therefore, we bought a 2 seat golf cart capable of reaching 20mph with a range of about 10 miles. This vehicle has plenty of potential and allows us to continue developing our platform.
 
 #Specifications
 The Birdie is an early 2000s [Club Car] (http://www.clubcar.com/us/en/golf-operations/fleet-golf.html) which has been heavily modified.
@@ -21,4 +21,5 @@ After our second actuation controller was destroyed during a testing accident, w
 - The steering and braking linear actuators consume 5A @ 12V each, so we control them with [Cytron 13A DC Motor Controllers] (http://www.robotshop.com/en/cytron-13a-5-30v-single-dc-motor-controller.html). These controllers include 13A of rated capacity and a full NMOS H-Bridge for bidirectional high-power operation.
 - An [Arduino Micro] (https://www.arduino.cc/en/Main/ArduinoBoardMicro) handles low-level actuation control. It reads in the actuator positions and accepts commands over serial from the main computer. The Arduino code is available in the [Birdie Actuator Repository] (https://github.com/AutoAI/birdie-actuator/tree/master).
 - The Arduino and related devices are powered by a [DROK LM2596 Voltage Converter] (https://www.amazon.com/DROK-Numerical-Switching-Adjustable-Stabilizers/dp/B00BYTEHQO/) that converts the controller's 12V input to 5V.
-
+-The controller was built into a plastic [Project Box] (https://www.amazon.com/gp/product/B00LGKG1BA)
+- Controller I/O and power is negotiated with [GX25 Aviation-grade Connectors] (https://www.amazon.com/dp/B015K3Z5AG). These connectors are very robust and offer a screw locking mechanism, which is perfect for a vehicular environment. 
