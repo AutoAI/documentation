@@ -29,7 +29,22 @@ Before you can install your shiny new actuation system, you have to remove the e
 - Our braking mechanism was replaced by a linear actuator. We did this by removing the foot pedal and attaching the appropriate mechanical linkage under the vehicle where the brake cable meets the pedal assembly.
 - Our golf cart had a mechanical speed controller installed, which was not suitable for our needs. We removed all of the mechanical electronics and wiring in order to reconfigure it to our needs later. NOTE: Be sure to lift the vehicle off the ground and disconnect the batteries before working on the electrical system! Lead acid batteries can generate massive currents capable of melting metal and the vehicle could enter a runaway situation if any mistakes are made. Safety first!
 
-##Drivetrain and Electrical
+##Installing New Controls
+You're now ready to install your new actuation system! We recommend that you install and test one control at a time to avoid having to track down mistakes later. The best order to install the controls depends on the specific model of your golf cart. We installed the steering first. The brakes were installed second, and the motor controller was installed last.
+
+###Steering
+When installing the steering actuator
+###Braking
+
+###Motor Controller
+
+
+##Building an Actuation Controller
+
+
+##Birdie Specifications
+Here are more detailed specifications of the Birdie. The body of this guide often leaves out technical details in the interest of being applicable to more vehicles. Those interested in learning more about the specifics can see more here.
+
 - The cart uses a 2.97hp 36v (0.58Ω) series-wound DC motor fed by 6 Trojan T-105 batteries at 6 volts each. Cables in this assembly are all 6AWG since at full speed the nominal current is around 62 amps.
 - Speed control of the motor is done using a [Kelly KDZ48200] (http://kellycontroller.com/kdz4820024v-48v200aseriespm-p-951.html) motor controller, which is fed an external source of pwm from the actuation controller and handles switching of the motor power. This device is fairly robust, as it has to handle over 2000 watts of power.
 - All miscellaneous electromechanical systems on the cart have been removed and replaced with solid-state control logic. This was done to make actuation simpler and more reliable, while decreasing weight and improving range.
