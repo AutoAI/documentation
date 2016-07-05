@@ -20,7 +20,6 @@ The "Cockroach" is the colloquial name for our first vehicle. It was built over 
 - The actuators themselves were each powered by an [Arduino PWM Motor Shield] (http://www.robotshop.com/en/10a-dc-motor-driver-arduino-shield.html) attached to the terminal blocks.
 - A wireless router is bolted to the underside of the system to allow easy wireless access to be able to ssh into the system from far away.
 - 12v to 5v conversion for the arduino and sensors was done by a [DC to DC converter](http://www.ebay.com/itm/LM2596-Buck-Step-down-Power-Converter-Module-DC-4-0-40-to-1-3-37V-LED-Voltmeter-/400802470941?hash=item5d51b05c1d:g:XyoAAOSwLa9UXJBL).
-![control diagram](cockroach-assets/control_diagram.png)
 Note that the actuator for the brake applied tension to the brake cable itself, not the brake pad.
 #Software
 - The Jetson is running the custom ARM build of Ubuntu 14.04 LTS that Nvidia shipped it with.
