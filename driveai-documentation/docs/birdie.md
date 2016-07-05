@@ -33,9 +33,10 @@ Before you can install your shiny new actuation system, you have to remove the e
 You're now ready to install your new actuation system! We recommend that you install and test one control at a time to avoid having to track down mistakes later. The best order to install the controls depends on the specific model of your golf cart. We installed the steering first. The brakes were installed second, and the motor controller was installed last.
 
 ###Steering
-When installing the steering actuator
-###Braking
+When installing the steering actuator, the objective is to apply force in the same way a rack-and-pinion system would. Mount your actuator as close to as where the manual steering hardware was as possible. This will reduce the chance of running into mechanical issues. Often you will find that the actuator fits in mounting holes previously used by the manual steering, which is very convenient.
 
+###Braking
+Installing the brake actuator is a similar process
 ###Motor Controller
 
 
