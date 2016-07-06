@@ -36,12 +36,22 @@ You're now ready to install your new actuation system! We recommend that you ins
 When installing the steering actuator, the objective is to apply force in the same way a rack-and-pinion system would. Mount your actuator as close to as where the manual steering hardware was as possible. This will reduce the chance of running into mechanical issues. Often you will find that the actuator fits in mounting holes previously used by the manual steering, which is very convenient.
 
 ###Braking
-Installing the brake actuator is a similar process
-###Motor Controller
+Installing the brake actuator is much like installing the steering actuator. This portion of the installation will likely require you to drill mounting holes in the floor of the cart to attach the actuator. We attached ours to the main brake cable to take the place of the foot pedal. Your approach may vary if you want to leave the manual brakes in place as well.
 
+###Motor Controller
+The motor controller is one of the most complex devices on the cart to setup. You have to take into account the physical location of the controller and how to deal with variables such as thermals, external weather, and cable access. We found that mounting the controller under the floor near the battery bay worked well. The location is secure and generally out of harm's way. The sheet metal of the floor provides good thermal dissipation when the controller is under load, and we added thermal paste to further improve heat transfer. Our wiring situation was so favorable such that we were able to reuse cables from the mechanical control system for our new installation. This is a good example of how keeping parts you strip from the cart can be helpful later on.
 
 ##Building an Actuation Controller
+All of these controls require large amounts of DC power to operate that far exceed what any computer's GPIO pins are capable of supplying. Therefore, the next step in this build is to fabricate what we call an actuation controller. In short, this is a device that takes in serial commands, DC power from the batteries, and sensor readings. It outputs precisely measured power and signals to the actuators and motor controller, respectively. The specifics of this device will vary greatly between vehicles and is based on your needs, but the general format to use is as follows:
+- Use an Arduino or similar type device to control all logic and switching.
+- Implement PWM motor drivers to power the linear actuators.
+- Install a buck converter to provide power for the arduino and sensors.
+- For safety, install a remote switch with the ability to power off the controller from a distance.
+Our actuation controller was soldered together on a perfboard and mounted inside a plastic project controller. We used GX25 style aviation connectors to serve as the interface between the controller and the rest of the cart. There are many different connectors that may suit your needs, these are worth doing some research on to decide what best suits your needs.
 
+The Arduino will need code to make sense of the many inputs and outputs of your controller. You could write your own software from scratch if you're comfortable with the languages involved, but otherwise we offer a generic Arduino sketch that powers the Birdie for your use. You may need to modify the code to meet your needs, since the exact layout will vary from vehicle to vehicle.
+
+##Testing Procedures and Good Practices
 
 ##Birdie Specifications
 Here are more detailed specifications of the Birdie. The body of this guide often leaves out technical details in the interest of being applicable to more vehicles. Those interested in learning more about the specifics can see more here.
