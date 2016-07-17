@@ -26,3 +26,6 @@ We use Slack as our primary communications interface. When you're comfortable wi
 
 # Completed Vehicles
 - [The Cockroach](/cockroach)
+
+# Current Vehicle
+- [The Birdie](/birdie)
